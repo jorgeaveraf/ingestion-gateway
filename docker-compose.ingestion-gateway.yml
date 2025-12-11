@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  ingestion-gateway:
+    build: .
+    container_name: ingestion-gateway
+    env_file:
+      - .env
+    ports:
+      - "8001:8000"
+    volumes:
+      - ../data_input:/shared/input
+    restart: unless-stopped
