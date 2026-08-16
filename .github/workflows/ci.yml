@@ -3,7 +3,7 @@ name: Ingestion Gateway CI/CD
 on:
   push:
     branches:
-      - feature/ci-cd
+      - main
 
 permissions:
   contents: read
